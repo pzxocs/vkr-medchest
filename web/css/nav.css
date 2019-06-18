@@ -1,0 +1,105 @@
+/*  bhoechie tab */
+div.bhoechie-tab-container{
+    z-index: 10;
+    background-color: #ffffff;
+    padding: 0 !important;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    background-clip: padding-box;
+    opacity: 0.97;
+    filter: alpha(opacity=97);
+}
+div.bhoechie-tab-menu{
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group{
+    margin-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group>a{
+    margin-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group>a .glyphicon,
+div.bhoechie-tab-menu div.list-group>a .fa {
+    color: #436dad;
+}
+div.bhoechie-tab-menu div.list-group>a:first-child{
+    border-top-right-radius: 0;
+    -moz-border-top-right-radius: 0;
+}
+div.bhoechie-tab-menu div.list-group>a:last-child{
+    border-bottom-right-radius: 0;
+    -moz-border-bottom-right-radius: 0;
+}
+div.bhoechie-tab-menu div.list-group>a.active,
+div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
+div.bhoechie-tab-menu div.list-group>a.active .fa{
+    background-color: #436dad;
+    color: #ffffff;
+}
+div.bhoechie-tab-menu div.list-group>a.active:after{
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-top: -13px;
+    border-left: 0;
+    border-bottom: 13px solid transparent;
+    border-top: 13px solid transparent;
+    border-left: 10px solid #436dad;
+}
+
+div.bhoechie-tab-content{
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+div.bhoechie-tab div.bhoechie-tab-content:not(.active){
+    display: none;
+}
+
+.navbar-right{
+    margin-right: 0 !important;
+}
+
+.navbar-brand{
+    padding-top: 3px !important;
+    color: #fff !important;
+}
+
+.navbar-collapse{
+    background-color: #436dad;
+    color: #ffffff;
+}
+
+.navbar-nav > li > a{
+    color: #ffffff !important;
+}
+
+.navbar-nav > .active > a{
+    background-color: transparent !important;
+}
+
+.navbar-inverse
+{
+    background-color: #436dad !important;
+}
+
+.mobile-nav
+{
+    display: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .mobile-nav
+    {
+        display: block !important;
+    }
+
+    .bhoechie-tab-menu
+    {
+        display: none;
+    }
+}
